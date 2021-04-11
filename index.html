@@ -1,63 +1,149 @@
-
-<header id="header">
-    <img id = "header-img" src="https://cdn3.vectorstock.com/i/thumb-large/06/07/dry-cleaning-service-emblem-laundry-self-service-vector-30250607.jpg">
+<nav id="navbar">
+  <header id="header">CSS Documentation</header>
+  <a href="#introduction" class="nav-link">Introduction</a>
+  <a href="#key_resources" class="nav-link">Key Resources</a>
+  <a href="#tutorials" class="nav-link">Tutorials</a>
+  <a href="#references" class="nav-link">References</a>
+  <a href="#tools_for_css_development" class="nav-link">Tools for CSS                     development</a>
+  <a href="#see_also" class="nav-link">See also</a>
+  <a href="#sample_css_code" class="nav-link">Sample CSS code</a>
+</nav>   
+<main id="main-doc">
+   <section class="main-section" id="introduction">
+     <header>Introduction</header>
+     <p>
+       Cascading Style Sheets (CSS) is a stylesheet language used to describe the          presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+     </p>
+     <p>
+       CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1,CSS2.1, CSS3. However, CSS4 has never become an official version.
+     </p>
+   </section>
   
-  <nav id="nav-bar">
-    <ul>
-      <li class="nav-link"><a href="#services">Services</a></li>
-      <li class="nav-link"><a href=#products>Products</a></li>
-      <li class="nav-link"><a href="#news-letter">News letter</a></li>
-      <li class="nav-link"><a href=#>About us</a></li>
-    </ul>  
-  </nav>  
-</header>
+   <section class="main-section" id="key_resources">
+     <header>Key Resources</header>
+     <p>
+       CSS Introduction
+      If you're new to web development, be sure to read the CSS basics article to learn what CSS is and how to use it.
+      CSS Tutorials
+      The CSS learning area contains a wealth of tutorials to take you from beginner level to proficiency, covering all the fundamentals.
+     </p>
+     <p>
+       CSS Reference
+      The exhaustive CSS reference for seasoned Web developers describes every             property and concept of CSS.
+     </p>
+   </section>
+  
+   <section class="main-section" id="tutorials">
+     <header>Tutorials</header>
+     <p>
+       CSS first steps:<br>
+       CSS (Cascading Style Sheets) is used to style and layout web pages — for            example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features.This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.
+     </p>
+     <p>
+       CSS building blocks<br>
+       This module carries on where CSS first steps left off — now you've gained            familiarity with the language and its syntax, and got some basic experience with using it, it's time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units,sizing, styling backgrounds and borders, debugging, and lots more.
+     </p>
+   </section>
+  
+   <section class="main-section" id="references">
+     <header>References</header>
+     <p>
+       <h4>CSS Cookbook</h4>
+       <p>The CSS layout cookbook aims to bring together recipes for common layout            patterns, things you might need to implement in your sites. In addition to providing code you can use as a starting point in your projects, these recipes highlight the different ways layout specifications can be used, and the choices you can make as a developer.</p>
+     </p>
+     <p>
+       <h4>A free visual guide to CSS</h4>
+       <p>Learn by example: cssreference.io is a free visual guide to CSS. It                features the most popular properties, and explains them with illustrated and animated examples.</p>
+     </p>
+   </section>
+  
+   <section class="main-section" id="tools_for_css_development">
+     <header>Tools for CSS development</header>
+     <p>
+       Firefox Developer Tools is a set of web developer tools built into Firefox.You can use them to examine, edit, and debug HTML, CSS, and JavaScript.This section contains detailed guides to all of the tools as well as information on how to debug Firefox for Android, how to extend DevTools, and how to debug the browser as a whole.If you have any feedback on DevTools or want to contribute to the project, you can join the DevTools community.
+     </p>
+     <p>
+       <ul>
+         <li>You can use the W3C CSS Validation Service to check if your CSS is                  valid. This is an invaluable debugging tool.</li>
+         <li> Firefox Developer Tools lets you view and edit a page's live CSS via                 the Inspector and Style Editor tools.</li>
+         <li>The Web Developer extension for Firefox lets you track and edit live                CSS on watched sites.</li>
+         <li>The Web community has created various other miscellaneous CSS tools for              you to use.</li>
+       </ul>
+     </p>
+   </section>
+  
+   <section class="main-section" id="see_also">
+     <header>See also</header>
+     <p>
+        <ul>
+         <li>CSS demos. Get a creative boost by exploring examples of the latest CSS              technologies in action.</li>
+         <li>Web languages to which CSS is often applied: HTML, SVG, MathML, XHTML,              and XML.</li>
+         <li>Mozilla technologies that make extensive use of CSS: Firefox, and                    Thunderbird extensions and themes.</li>
+          <li>Mozilla mailing list</li>
+          <li>Stack Overflow questions about CSS</li>
+        </ul>
+     </p>
+   </section>
+   <section class="main-section" id="sample_css_code">
+     <header>Sample CSS code</header>
+     <p>Here are afew examples of using CSS format web pages:</p>
+     <h4>Setting background width, height and color</h4>
+     <pre>
+       <code>
+         div {
+            width: 100%;
+            height: 200px;
+            background-color: lavender;
+          }
+       </code>
+     </pre>
+     
+     <h4>Positioning background images</h4>
+     <pre>
+       <code>
+          body {
+             background-image: url("https://cdn.bitdegree.org/learn/repeat-background.jpg?780a05c1");
+             background-position: center top;
+             background-repeat: no-repeat;
+         }
+       </code>
+     </pre>
+     <h4>Border styling</h4>
+     <pre>
+       <code>
+         p {
+             padding-left: 10px;
+          }
 
-<div class ="sign-up-page" id="sign-up">
-  <form id="form" action="https://www.freecodecamp.com/email-submit">
-    <h1>Sign up here</h1>
-    <label>Email address:
-      <input id="email" type="email" placeholder="email address"/>
-    </label>
-    <input type="submit" id="submit" value="Get Started"/>
-  </form>  
-</div> 
-
-</div class="video-page">
-      <h1 id="process">Dry cleaning Process</h1>
-   <div id="video">
-      <iframe width="500" height="315" src="https://www.youtube.com/embed/qWmtGDEBVXk"             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;           gyroscope; picture-in-picture" allowfullscreen></iframe>
-   </div>
-</div>
-
-<div class="services" id="services">
-  <p id ="at-your-service">We are always at your service no matter where you are.</p>
-</div> 
-
-<div class = "products" id="products">
-  <h1 id="check-out">Check out our products<h1>
-  <div id="drycleaning">
-    <h4 class = "dry">Drycleaning machines</h4>
-  </div>
-  <div id="laundry">
-    <h4 class = "dry">Laundry machines</h4>
-  </div>
-  <div id="chemicals">
-    <h4 class = "dry">Detergents</h4>
-  </div>    
-</div>  
-
-<div class="news-letter" id="news-letter">
-  <p id ="at-your-service">Be informed on the latest trends.</p>
-  <div class="clean">
-     <h4 style="text-align:center";>How to do laundry properly</h4>
-    <p>Learn what you are doing wrong in the laundry room so you don't end up
-       with shrunken or damaged clothing.<a href="#sign-up">Sign up</a> for the free          laundry newsletter to recieve weekly tips.
-    </p>
-  </div>
-  <div class="smart">
-      <h4 style="text-align:center";>Best Dryer sheets</h4>
-    <p>
-      Laundry is enough of a chore , so why not enlist some help?Dryer sheets can help       keep clothes soft, static free and fragrant.Learn more.....
-    </p>
-  </div>
-</div> 
+          p.solid {border-style: solid;}
+          p.double {border-style: double;}
+          p.groove {border-style: groove;}
+          p.inset {border-style: inset;}
+          p.ridge {border-style: ridge;}
+       </code>
+     </pre>
+     <h4>Setting margins</h4>
+     <pre>
+       <code>
+          p {
+            margin: 10px 20px 30px;
+            width: auto;
+            background-color: white;
+            border: 2px solid #e9385a;
+            text-align: center;
+          }
+       </code>
+     </pre>
+     <h4>Box model properties</h4>
+     <pre>
+       <code>
+          div {
+            width: 200px;
+            border: 35px solid blue;
+            padding: 35px;
+            margin: 35px;
+         }
+       </code>
+     </pre>  
+   </section> 
+</main>  

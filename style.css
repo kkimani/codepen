@@ -1,169 +1,82 @@
-#header-img {
-  max-width: 200px;
-  height: 200px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:400, 600&display=swap');
+
+. {
+  box-sizing: border-box;
 }
 
-#header {
+body {
   display: flex;
-  width: 1600px;
-  max-height: 400%;
-  align-items: center;
-  position: fixed;
-  background-color: #83f1d9;
+  margin: 0;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
 }
 
 nav {
-  width: 90%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: #EEEEEE;
+  border-right: 2px solid #777;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  color: blue;
-  width: 900px;
-  justify-content: space-around;
+nav header {
+  padding: 15px;
 }
 
-#nav-bar {
-  background-color: #000033; 
+nav a {
+  color: #000000;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  border-top: 2px solid #777;
 }
 
-a:link, a:visited {
-    background-color: #6dd38f;
-    border: none;
-    color: #074460;
-    padding: 15px 32px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    text-decoration: none;
-   font-size: 20px;
-   cursor: pointer;
-   display: inline-block;
+main {
+  flex: 1;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
-a:hover, a:active {
-   background-color: #82c20a;
+section {
+  paddding: 20px;
+  line-height: 1.5;
 }
 
-.sign-up-page {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 15px;
 }
 
-#form {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.video-page {
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-#process {
-  text-align: center;
-}
-
-#video {
-  display: flex;
-  justify-content: center;
-  content-align: center;
-}
-
-#services {
-  height: 400px;
-  background-image: url("https://spotclean.co.ug/wp-content/uploads/2019/10/small-copy.jpg");
-}
-
-#at-your-service {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: Helvetica, Arial, San-serif;
-  color: #000066;
-}
-
-#products {
-  height: 400px;
-  background-image: url("https://lh3.googleusercontent.com/proxy/Nsj-WZEwVdw0hfRM8B0UKufTOta4KreDk3Bru81Hnr5blX7kAU00zTCr9ml4IYDodZf9w0C9IgumxwnqfJd0KevwzQG3T2-Km5viY0MpLBydue_BAHkEmTPBalvaQx1Tclw");
-}
-
-#check-out {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: Helvetica, Arial, San-serif;
-  color:  #000033;  
-}
-
-#drycleaning {
-  float: left;
+p{
   margin-left: 15px;
-  width: 500px;
-  height: 300px;
-  background-image: url("https://media.istockphoto.com/photos/washing-machines-clothes-washers-door-in-a-public-launderette-picture-id157435692?k=6&m=157435692&s=612x612&w=0&h=THjcygEYOBPKGD1YEec5uocPDEYfb4dwGTQO5goZrLM=");
 }
 
-#laundry {
-  float: left;
-  margin-left: 18px;
-  width: 500px;
-  height: 300px;
-  background-image: url("https://images.pexels.com/photos/2371/person-looking-searching-clean.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  
+h4{
+  margin-left: 15px;
 }
 
-#chemicals {
-  float: right;
-  margin-right: 15px;
-  width: 500px;
-  height: 300px;
-  background-image: url("https://cdn.pixabay.com/photo/2016/06/13/10/48/bottles-1453997__340.jpg");
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
 }
 
-.dry {
-  margin-top:10px;
-  text-align: center;
-}
-
-#news-letter {
-  height: 300px;
-  background-color: #CCFFCC;
-}
-.clean {
-  width: 700px;
-  margin-left: 20px;
-  float: left;
-  text-align: left;
-  background-color: #E0E0E0;
-  font-size: 18px;
-  font-family: helvetica, arial, san-serif;
-  border: 2px solid; 
-  border-radius: 25px;
-    
-}
-
-.smart {
-  width: 700px;
-  margin-right: 20px;
-  float: right;
-  text-align: left;
-  background-color: #E0E0E0;
-  font-size: 18px;
-  font-family: helvetica, arial, san-serif;
-  border: 2px solid; 
-  border-radius: 25px;
-}
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
   nav {
-    display: none;
+    border-right: none;
+    border-bottom: 2px solid #777;
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  
+  main {
+    height: auto;
+    width: 100%;
   }
 }
+

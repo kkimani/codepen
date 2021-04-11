@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "en">
+<div class = "container">  
+<body>
+  <h1 id="title"> Sunflower Customer Survey Form</h1>
+  <p id = "description">
+    Thank you for participating in this survey.
+  </p>
+  
+  <form id = "survey-form">
+   <div class="form-group">
+      <label id="name-label" for="name">Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email:</label>
+      <input
+        type="text"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age:</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        min="10"
+        max="100"     
+        class="form-control"
+        placeholder="Age"
+        required
+      />
+    </div>
+    <div class="form-group">
+     <p>Which of our services interest you?</p>
+     <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select service</option>
+        <option value="drycleaning">Drycleaning</option>
+        <option value="laundry">Laundry</option>
+        <option value="fumigation">Fumigation</option>
+        <option value="carpetsandupholstery">Carpets and Upholstery</option>
+        <option value="other">Other</option>
+      </select>
+      <div class="form-group">
+      <p>Would you like personalized service?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label>
+        <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />No</label>
+        <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+    </div>
+    <div class = "form-group">
+      <p>How else can we better serve you?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label
+          ><input
+          name="prefer"
+          value="moreworkinghours"
+          type="checkbox"
+          class="input-checkbox"
+          />More Working Hours</label>
+      <label
+          ><input
+          name="prefer"
+          value="pickanddrop"
+          type="checkbox"
+          class="input-checkbox"
+          />Pick and Drop From Home</label>
+      <label
+          ><input
+          name="prefer"
+          value="loyaltypoints"
+          type="checkbox"
+          class="input-checkbox"
+          />Loyalty Points</label>
+      <label
+          ><input
+          name="prefer"
+          value="carcleaning"
+          type="checkbox"
+          class="input-checkbox"
+          />Car Cleaning</label>          
+    </div>
+     <div class="form-group">
+      <p>Any additional thoughts?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your thoughts here..."
+      ></textarea>
+    </div>  
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        SUBMIT
+      </button>
+    </div>
+    
+  </form>  
+</body>  
+</div>  
+</html>  
